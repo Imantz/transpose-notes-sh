@@ -21,6 +21,7 @@ run_test() {
         echo "Test passed!"
     else
         echo "Test failed. Expected: '$expected', Got: '$output_from_script'"
+        exit 1
     fi
     echo -e "\n"
 }
