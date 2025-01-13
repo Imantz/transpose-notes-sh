@@ -89,7 +89,3 @@ run_test "Test 7: Task input and taks output" \
 
 # # Cleanup
 rm -f test_input.json transpose_output.json
-
-
-# Sample output for transposing to -3 semitones:
-
