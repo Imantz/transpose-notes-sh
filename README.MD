@@ -65,6 +65,10 @@ ranges.
 
     This will adjust octaves and validate ranges accordingly.
 
+## Output
+
+    Output is generated in the transpose_output.json file.
+
 ## Testing
 
 1. Make the script executable:

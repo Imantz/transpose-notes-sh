@@ -18,6 +18,7 @@ if ! [[ $2 =~ ^-?[0-9]+$ ]]; then
     exit 1
 fi
 
+output_file="transpose_output.json"  # This could be ARGV[3]
 transposition_range=$2
 input_file=$1
 
@@ -75,5 +76,5 @@ done <<< "$subarrays"
 transposed_notes="[${transposed_notes%,}]"
 
 
-echo $transposed_notes > transpose_output.json
+echo $transposed_notes > $output_file
 
