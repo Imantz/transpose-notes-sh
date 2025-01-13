@@ -25,8 +25,6 @@ run_test() {
     echo -e "\n"
 }
 
-
-
 run_test "Test 1: No parameters" \
          "Illegal number of parameters" \
          "$script"
@@ -86,6 +84,5 @@ run_test "Test 7: Task input and taks output" \
             "$script test_input.json -3" \
             transpose_output.json
 
-
-# # Cleanup
+# Cleanup
 rm -f test_input.json transpose_output.json
