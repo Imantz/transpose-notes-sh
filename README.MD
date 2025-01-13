@@ -16,8 +16,11 @@ ranges.
   - The last note is `[5, 1]` (highest note).
 
 ## Usage
-
-1. Make the script executable:
+1. Clone the Git repository
+    ```bash
+    git clone https://github.com/Imantz/transpose-notes-sh.git
+    ```
+2. Make the script executable:
    ```bash
    chmod u+x task.sh
    ```
@@ -28,9 +31,9 @@ ranges.
 
     **+x**: Adds executable permission to the file. After running this command, the owner can execute the script as a program.
 
-2. Run script
+3. Run the script
    ```bash
-   ./sh task.sh input_file.json n
+   ./task.sh input_file.json n
    ```
 
 ## Arguments
@@ -63,8 +66,8 @@ ranges.
    ```bash
    chmod u+x test.sh
    ```
-2. Run script
+2. Run the script
    ```bash
-   ./sh test.sh
+   ./test.sh
    ```
    
