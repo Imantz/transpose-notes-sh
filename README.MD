@@ -20,7 +20,11 @@ ranges.
     ```bash
     git clone https://github.com/Imantz/transpose-notes-sh.git
     ```
-2. Make the script executable:
+2. Change directory to transpose-notes-sh 
+    ```bash
+    cd transpose-notes-sh
+    ```
+3. Make the script executable:
    ```bash
    chmod u+x task.sh
    ```
@@ -31,7 +35,7 @@ ranges.
 
     **+x**: Adds executable permission to the file. After running this command, the owner can execute the script as a program.
 
-3. Run the script
+4. Run the script
    ```bash
    ./task.sh input_file.json n
    ```
