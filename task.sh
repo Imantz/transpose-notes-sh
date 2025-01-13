@@ -56,15 +56,15 @@ while IFS=',' read -r octave_number note_number; do
     # Validate the note range
     if [ $octave_number -eq -3 ] && [ $note_number -lt 10 ]; then
         echo "Invalid note: octave -3 with note $note_number is out of range."
-        continue
+        exit 1
     fi
     if [ $octave_number -eq 5 ] && [ $note_number -gt 1 ]; then
         echo "Invalid note: octave 5 with note $note_number is out of range."
-        continue
+        exit 1
     fi
     if [ $octave_number -lt -3 ] || [ $octave_number -gt 5 ]; then
         echo "Invalid note: octave $octave_number with note $note_number is out of range."
-        continue
+        exit 1
     fi
 
     # Append the valid pair as an array to the string
