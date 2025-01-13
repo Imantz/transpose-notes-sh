@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Validate if have 2 parameters
-if [ "$#" -ne 2 ]; then
+if [ "$#" -lt 2 ]; then
     echo "Illegal number of parameters"
     exit 1
 fi
@@ -19,6 +19,7 @@ if ! [[ $2 =~ ^-?[0-9]+$ ]]; then
 fi
 
 transposition_range=$2
+input_file=$1
 
 # Read file content
 # json structure 
@@ -27,7 +28,7 @@ transposition_range=$2
 #   [octave_number, note_number],
 #    ...
 # ]
-json=$(cat tinput.json)
+json=$(cat $input_file)
 
 # # # Step 1: Remove unnecessary spaces and newlines
 json=$(echo $json| tr -d '\n' | tr -d ' ')
