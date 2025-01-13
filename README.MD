@@ -30,18 +30,18 @@ ranges.
 
 2. Run script
    ```bash
-   ./sh task.sh input_file_name.json n
+   ./sh task.sh input_file.json n
    ```
 
 ## Arguments
 
-1. input_file_name.json:
+1. **input_file.json**:
 
     The first argument is the name of the JSON file containing the notes to be transposed. The file should include an array of note pairs in the format:
 
     [[octave, note], [octave, note], ...]
 
-2. n:
+2. **n**:
 
     The second argument specifies the number of semitones to transpose the notes:
 
@@ -53,6 +53,18 @@ ranges.
 
     To transpose all notes in input.json downward by 3 semitones:
 
-        ./task.sh input_file_name.json -3
+        ./task.sh input_file.json -3
 
     This will adjust octaves and validate ranges accordingly.
+
+## Testing
+
+1. Make the script executable:
+   ```bash
+   chmod u+x test.sh
+   ```
+2. Run script
+   ```bash
+   ./sh test.sh
+   ```
+   
