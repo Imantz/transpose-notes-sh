@@ -5,6 +5,7 @@ semitones, handling octave adjustments and ensuring notes remain within valid
 ranges.
 
 ---
+![Run Tests](https://github.com/Imantz/transpose-notes-sh/actions/workflows/test.yml/badge.svg)
 
 ## Features
 
