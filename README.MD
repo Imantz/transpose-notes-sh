@@ -21,24 +21,10 @@ ranges.
     ```bash
     git clone https://github.com/Imantz/transpose-notes-sh.git
     ```
-2. Change directory to transpose-notes-sh 
-    ```bash
-    cd transpose-notes-sh
-    ```
-3. Make the script executable:
+
+2. Run the script
    ```bash
-   chmod u+x task.sh
-   ```
-
-    **chmod**: The chmod command is used to change the permissions of a file.
-
-    **u**: Refers to the file's owner (user).
-
-    **+x**: Adds executable permission to the file. After running this command, the owner can execute the script as a program.
-
-4. Run the script
-   ```bash
-   ./task.sh input_file.json n
+   php input_file.json n
    ```
 
 ## Arguments
@@ -61,7 +47,7 @@ ranges.
 
     To transpose all notes in input.json downward by 3 semitones:
 
-        ./task.sh input_file.json -3
+        php input_file.json -3
 
     This will adjust octaves and validate ranges accordingly.
 
@@ -71,12 +57,8 @@ ranges.
 
 ## Testing
 
-1. Make the script executable:
+1. Run the script
    ```bash
-   chmod u+x test.sh
-   ```
-2. Run the script
-   ```bash
-   ./test.sh
+   php test.php
    ```
    
